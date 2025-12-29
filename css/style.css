@@ -6,7 +6,7 @@
 
   html, body {
   overflow: hidden;
-}
+  }
 }
 
 /* content */
@@ -21,6 +21,20 @@
   background-color: #22a6ff;
 }
 
-img {
-  width: 100px;
+.pipe {
+  position: absolute;
+  width: 80px;
+
+  bottom: 0;
+  animation: pipe-animation 2s infinite linear;
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -80px;
+  }
+
+  to {
+    right: 100%;
+  }
 }
